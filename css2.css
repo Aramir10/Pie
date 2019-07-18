@@ -1,0 +1,9 @@
+.pie {
+  background-image: conic-gradient(
+    #d44 calc(3.6deg * var(--segment1, 100)),
+    #fc3 0 calc(3.6deg * var(--segment2, 100)),
+    #ac0 0 calc(3.6deg * var(--segment3, 100)),
+    #0ac 0 calc(3.6deg * var(--segment4, 100)),
+    
+  );
+}
