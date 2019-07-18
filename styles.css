@@ -1,40 +1,50 @@
+.container
+{
+  height: 400px;
+  width: 400px;
+  margin-top: 50px;
 
-.arrow-up {
-  width: 0;
-  height: 0;
-  border-left: 60px solid transparent;
-  border-right: 60px solid transparent;
-
-  border-bottom: 100px solid yellow;
+}
+.boxes
+{
+  position: relative;
 }
 
-.arrow-down {
-  width: 0;
-  height: 0;
-  border-left: 60px solid transparent;
-  border-right: 60px solid transparent;
-
-  border-top: 100px solid #f00;
+.box1, .box2 , .box3, .box4
+{
+ position: absolute;
+ width: 198px;
+ height: 198px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ border: 2px solid black;
 }
-
-
-
-.arrow-left {
-  width: 0;
-  height: 0;
-  border-top: 60px solid transparent;
-  border-bottom: 60px solid transparent;
-
-  border-right:100px solid blue;
+.box1
+{
+  top:0;
+  left: 0;
+  background-color: red;
+  border-top-left-radius:100%;
 }
-.arrow-right {
-  width: 0;
-  height: 0;
-  border-top: 60px solid transparent;
-  border-bottom: 60px solid transparent;
-
-  border-left: 100px solid green;
+.box2
+{
+  top:0;
+  right: 0;
+  background-color: yellow;
+  border-top-right-radius:100%;
 }
-.pie {
-  align-items: center;
+.box3
+{
+  top:200px;
+  left: 0;
+  background-color: green;
+  border-bottom-left-radius:100%;
+}
+.box4
+{
+  top:200px;
+  right: 0;
+  background-color: blue;
+  border-bottom-right-radius:100%;
 }
